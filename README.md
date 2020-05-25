@@ -1,7 +1,19 @@
-# first_repo
-Num = int(input("Enter the first number here "))
-def fibonacci(n):
-    if n < 2:
-        return n
-    return fibonacci(n-2) + fibonacci(n-1)
-print(fib)
+n = int(input("enter the number of terms "))
+
+n1 = 0
+n2 = 1
+count = 0
+
+if n<= 0:
+   print("Please enter a positive integer")
+elif n == 1:
+   print("Fibonacci sequence upto",n,":")
+   print(n1)
+else:
+   print("Fibonacci sequence:")
+   while count < n:
+       print(n1)
+       n3 = n1 + n2
+       n1 = n2
+       n2 = n3
+       count += 1
